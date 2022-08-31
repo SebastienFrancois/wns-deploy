@@ -4,24 +4,24 @@ services:
   server:
     # build: ./server
     # To replace with the correct path of your server image
-    image: patrickvo/wns-deploy-server
+    image: patrickvo/wns-deploy-server:latest
     command: sh -c "npm run build && npm run prod"
     expose:
       - 5000
     environment:
-      - NODE_ENV=staging
+      - NODE_ENV=production
       - SERVER_PORT=5000
     depends_on:
       - mongodb
   client:
     # build: ./client
     # To replace with the correct path of your client image
-    image: patrickvo/wns-deploy-client
+    image: patrickvo/wns-deploy-client:latest
     command: sh -c "npm run build"
     volumes:
       - web-client-build:/app/build
     environment:
-      - NODE_ENV=staging
+      - NODE_ENV=production
   mongodb:
     image: mongo:4.4.9
   nginx:
