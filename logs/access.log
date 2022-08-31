@@ -17,3 +17,5 @@
 172.20.0.1 - - [30/Aug/2022:09:06:06 +0000] "POST /graphql HTTP/1.1" 200 24 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
 172.20.0.1 - - [30/Aug/2022:09:06:06 +0000] "GET /manifest.json HTTP/1.1" 304 0 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
 172.20.0.1 - - [30/Aug/2022:09:06:06 +0000] "GET /logo192.png HTTP/1.1" 304 0 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+172.20.0.1 - - [31/Aug/2022:05:51:29 +0000] "GET / HTTP/1.1" 500 579 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+172.20.0.1 - - [31/Aug/2022:05:51:30 +0000] "GET /favicon.ico HTTP/1.1" 200 3870 "http://localhost:8001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
