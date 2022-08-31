@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 services:
   server:
@@ -17,7 +17,7 @@ services:
     volumes:
       - web-client-build:/app/build
     environment:
-      - NODE_ENV=production  
+      - NODE_ENV=production
   mongodb:
     image: mongo:4.4.9
   nginx:

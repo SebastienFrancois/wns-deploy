@@ -1,10 +1,10 @@
-version: '3'
+version: "3"
 
 services:
   server:
     # build: ./server
-    # change username and server image by your DockerHub info
-    image: username/server-image:latest
+    # To replace with the correct path of your server image
+    image: patrickvo/wns-deploy-server:latest
     command: sh -c "npm run build && npm run prod"
     expose:
       - 5000
@@ -15,13 +15,13 @@ services:
       - mongodb
   client:
     # build: ./client
-    # change username and client image by your DockerHub info
-    image: username/client-image:latest
+    # To replace with the correct path of your client image
+    image: patrickvo/wns-deploy-client:latest
     command: sh -c "npm run build"
     volumes:
       - web-client-build:/app/build
     environment:
-      - NODE_ENV=production  
+      - NODE_ENV=production
   mongodb:
     image: mongo:4.4.9
   nginx:
